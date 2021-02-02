@@ -1,0 +1,13 @@
+<h2>User Login Form</h2>
+<form [formGroup]="loginForm">
+    <div class="lbl-val">
+        <label class="lbl">Username:</label>
+        <input type="text" formControlName="username">
+    </div>
+    <div class="lbl-val">
+        <label class="lbl">Password:</label>
+        <input type="password" formControlName="password">
+    </div>
+    <button class="cstm-btn" type="submit" (click)="onLogin()">Login</button>
+    <a routerLink="/forgotpwd">Forgot Password</a>
+</form>

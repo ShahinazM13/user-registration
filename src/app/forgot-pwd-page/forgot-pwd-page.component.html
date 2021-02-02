@@ -1,0 +1,11 @@
+<h2>Forgot Password</h2>
+<form [formGroup]="forgotPwdForm">
+    <div class="lbl-val">
+        <label class="lbl">Enter Email</label>
+        <input type="email" formControlName="email">
+    </div>
+    <ngx-recaptcha2 #captchaElem siteKey="123" (success)="onCaptchaSuccess($event)"
+        [size]="size" [hl]="lang" [theme]="theme" [type]="type" formControlName="captcha">
+    </ngx-recaptcha2>
+    <button [disabled]="disableSendCodeBtn" class="cstm-btn" (click)="sendEmail()">Send Code</button>
+</form>

@@ -1,0 +1,22 @@
+h2{
+    color: Blue;
+    font-weight: bold;
+}
+
+.lbl-val {
+    margin-bottom: 10px;
+}
+
+.lbl {
+    font-size: 14px;
+    display: block;
+}
+
+.cstm-btn {
+    font-size: 14px;
+    padding: 5px;
+    margin: 10px 10px 0 0;
+    color: white;
+    background-color: blue;
+    border-radius: 12px;
+}
